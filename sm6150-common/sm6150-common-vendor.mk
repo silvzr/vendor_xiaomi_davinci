@@ -168,6 +168,7 @@ PRODUCT_PACKAGES += \
     librice \
     libsmwrapper \
     libvppclient \
+	libwfdaac \
     capi_v2_aptX_CLHDAD_Encoder \
     capi_v2_aptX_Classic \
     capi_v2_aptX_HD \
@@ -386,11 +387,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
     fm_helium \
-    libaptXHD_encoder \
-    libaptX_encoder \
     libfm-hci \
     vendor.qti.hardware.fm@1.0_system_ext \
-    vendor.qti.imsrtpservice@3.0_system_ext \
     CACertService \
     CneApp \
     IWlanService \

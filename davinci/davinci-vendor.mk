@@ -51,6 +51,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin \
     vendor/xiaomi/davinci/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
     vendor/xiaomi/davinci/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
+    vendor/xiaomi/davinci/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc \
     vendor/xiaomi/davinci/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/davinci/proprietary/vendor/etc/sensors/config/adux1050_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/adux1050_0.json \
     vendor/xiaomi/davinci/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
@@ -282,9 +283,16 @@ PRODUCT_PACKAGES += \
     libtriplecam_video_optical_zoom \
     libvidhance \
     mi.motor.daemon \
+    nfc_nci.nqx.default.hw \
     sensors.ssc \
+    vendor.nxp.hardware.nfc@1.0_vendor \
+    vendor.nxp.hardware.nfc@1.1_vendor \
+    vendor.nxp.hardware.nfc@1.0_system_ext \
+    vendor.nxp.hardware.nfc@1.1_system_ext \
+    vendor.nxp.hardware.nfc@1.2-service \
     vendor.xiaomi.hardware.motor@1.0-service \
     mi_thermald \
+    nqnfcinfo \
     remosaic_daemon \
     sensors.qti \
     thermal-engine

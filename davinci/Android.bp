@@ -2181,7 +2181,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmpbase",
+	name: "libmpbase_vendor",
+	stem: "libmpbase",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -2431,18 +2432,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "64",
 	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "cnss-daemon",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/cnss-daemon"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
 	prefer: true,
 	soc_specific: true,
 }
